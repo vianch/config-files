@@ -1,0 +1,10 @@
+name: Deploy digital ocean
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  deploy:
+    runs-on: [self-hosted, develop]
+    steps:
+      - uses: actions/checkout@v2       

@@ -1,0 +1,3 @@
+# Ignore artifacts:
+server/apiDocs/lib
+jest.config.js
