@@ -56,7 +56,7 @@ Use the summary field to provide a succinct description of the change:
 * no dot (.) at the end
 
 
-#### Commit Message Body
+#### <a name="commit-body"></a>Commit Message Body
 
 Just as in the summary, use the imperative, present tense: "fix" not "fixed" nor "fixes".
 
@@ -64,7 +64,7 @@ Explain the motivation for the change in the commit message body. This commit me
 You can include a comparison of the previous behavior with the new behavior in order to illustrate the impact of the change.
 
 
-#### Commit Message Footer
+#### <a name="commit-footer"></a>Commit Message Footer
 
 The footer can contain information about breaking changes and is also the place to reference GitHub issues, Jira tickets, and other PRs that this commit closes or is related to.
 
