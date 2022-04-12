@@ -22,9 +22,11 @@
 #read name
 
 # $1
-name=${1:-"Victor"} 
+name=${1:-"VIANCH"} 
 # $2
 compliments=${2:-"Good"}
+# $3
+city=${3:-"BOGOTA"}
 user=$(whoami)
 date=$(date)
 whereami=$(pwd)
@@ -53,4 +55,4 @@ echo " "
 echo "Your internet ip: $whereamlocated and your local ip: $(hostname -I | awk '{print $1}')"
 echo "Raspberry pi temp: $(vcgencmd measure_temp | grep  -o -E '[[:digit:]].*')"
 echo " "
-echo "$(curl -s  wttr\.in/"BOGOTA"?0?A?m)"
+echo "$(curl -s  wttr\.in/"$city"?0?A?m)"
