@@ -91,3 +91,7 @@ Breaking Change section should start with the phrase "BREAKING CHANGE: " followe
 - install [cz-cli](https://github.com/commitizen/cz-cli). Run `npm install -g commitizen`
 - Alternative with emojis [git-cz](https://www.npmjs.com/package/git-cz). Run `npm install -g yarn`
 - optional packages: [cz-emoji](https://github.com/ngryman/cz-emoji) / [gitmoji](https://github.com/Landish/cz-gitmoji)
+
+
+### CIRCLECI Tutorial 
+[tutorial](https://www.digitalocean.com/community/tutorials/how-to-automate-deployment-using-circleci-and-github-on-ubuntu-18-04)  How To Automate Deployment Using CircleCI
