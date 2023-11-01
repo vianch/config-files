@@ -1,4 +1,5 @@
 #!/bin/bash
+# source bestdayever.sh to run greet
 # ENABLE THIS BASH FILE FOR YOUR USER
 # sudo cp bestdayever.sh /etc/profile.d/bestdayever.sh
 
@@ -20,39 +21,17 @@
 
 #name="Victor"
 #read name
-
-# $1
-name=${1:-"VIANCH"} 
-# $2
-compliments=${2:-"Good"}
-# $3
-city=${3:-"BOGOTA"}
-user=$(whoami)
-date=$(date)
-whereami=$(pwd)
-lastlogin=$(last -1 -R  $USER | head -1 | cut -c 20-)
-#curl ifconfig.me
-#curl -4/-6 icanhazip.com
-#curl ipinfo.io/ip
-#curl api.ipify.org
-#curl checkip.dyndns.org
-#dig +short myip.opendns.com @resolver1.opendns.com
-#host myip.opendns.com resolver1.opendns.com
-#curl ident.me
-#curl bot.whatismyipaddress.com
-#curl ipecho.net/plain
-#curl checkip.amazonaws.com
-whereamlocated=$(dig +short myip.opendns.com @resolver1.opendns.com)
-
-neofetch
-sleep 0.5
-echo "Hi $name! your looking $compliments "
-echo " "
-echo "You're currently logged in as $user and you're in the directory $whereami."
-echo "Current date: $date"
-echo "Last login time:$lastlogin"
-echo " "
-echo "Your internet ip: $whereamlocated and your local ip: $(hostname -I | awk '{print $1}')"
-echo "Raspberry pi temp: $(vcgencmd measure_temp | grep  -o -E '[[:digit:]].*')"
-echo " "
-echo "$(curl -s  wttr\.in/"$city"?0?A?m)"
+  sleep 0.5
+function greet() {
+  name=${1:-"VIANCH"} 
+  compliments=${2:-"Good"}
+  city=${3:-"BOGOTA"}
+  user=$(whoami)
+  date=$(date)
+  whereamlocated=$(dig +short myip.opendns.com @resolver1.opendns.com)
+  #neofetch
+  sleep 0.5
+  echo "Hi $name! your looking $compliments "
+  echo "Current date: $date"
+  curl -s  "wttr.in/london?0?A?m"
+}
