@@ -5,7 +5,6 @@
 - [💻 Apps used](#-apps-used)
 - [🖼️ Wallpapers](#-wallpapers)
 
-
 ## 🎨 Config files
 | Config Name                                                                                                                    |
 |--------------------------------------------------------------------------------------------------------------------------------|
@@ -16,13 +15,12 @@
 | [GitHub](https://github.com/vianch/config-files/tree/main/configs/Github)                                                      |
 | [Husky](https://github.com/vianch/config-files/tree/main/configs/Husky)                                                        |
 | [Jest](https://github.com/vianch/config-files/tree/main/configs/Jest)                                                          |
-| [Kubernetes](https://github.com/vianch/config-files/tree/main/configs/Kubernetes) & [Neovim](https://github.com/neovim/neovim) |
+| [Kubernetes](https://github.com/vianch/config-files/tree/main/configs/Kubernetes) |
 | [Linters](https://github.com/vianch/config-files/tree/main/configs/Linters)                                                    |
 | [NGINX](https://github.com/vianch/config-files/tree/main/configs/NGINX)                                                        |
+| [iterm2 Configs](https://github.com/vianch/config-files/tree/main/configs/terminal)                                            |
 | [NextJS](https://github.com/vianch/config-files/tree/main/configs/NextJs)                                                      |
-| [TypeScript](https://github.com/vianch/config-files/tree/main/configs/TypeScript)                                                                                 |
-
-
+| [TypeScript](https://github.com/vianch/config-files/tree/main/configs/TypeScript)                                              |
 
 ## 🎨 Documentation
 - [Config-files wiki](https://github.com/vianch/config-files/wiki)
@@ -32,25 +30,22 @@
 * [NGINX](https://github.com/vianch/config-files/wiki/NGINX-guide)
 * [Terminal Hacks (In progress)](#)
 
-
-
 ## 💻 Apps used
-| Program           | Name                                                                                                                         |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 🎨 Color Scheme    | [Rosé Pine](https://github.com/rose-pine)                                                                                    |
-| 📁 Icon theme      | [Luv Icons](https://github.com/Nitrux/luv-icon-theme)                                                                        |
-| 🚀 Window Manager  | [Bspwm](https://github.com/baskerville/bspwm)                                                                                |
-| 🚧 Bar             | [Polybar](https://github.com/polybar/polybar)                                                                                |
-| 💾 Launcher        | [Rofi](https://github.com/davatorium/rofi)                                                                                   |
-| 🌍 Web Browser     | [Firefox](https://www.mozilla.org/en-US/firefox/new/?redirect_source=firefox-com)                                            |
-| 🖊️ Text Editor     | [VSCode](https://aur.archlinux.org/packages/visual-studio-code-bin/?O=10&PP=10) & [Neovim](https://github.com/neovim/neovim) |
-| 🐚 Shell           | [Fish](https://github.com/fish-shell/fish-shell)                                                                             |
-| ⌨️ Terminal        | [Alacritty](https://github.com/alacritty/alacritty)                                                                          |
-| 📄 Document Viewer | [Zathura](https://github.com/alacritty/alacritty)                                                                            |
-| 👔 GTK             | [Rosé Pine](https://github.com/rose-pine/gtk)                                                                                |
-| 🎵 Music Player    | [Ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)                                                                                |
+| Program               | Name                                                                     |
+|-----------------------|--------------------------------------------------------------------------|
+| Terminal              | [iterm2](https://iterm2.com/)                                            |
+| Terminal framework    | [Oh My Zsh](https://ohmyz.sh/)                                           |
+| Terminal Searcher     | [fzf](https://github.com/junegunn/fzf)                                   |
+| IDE                   | [Webstorm](https://www.jetbrains.com/webstorm/)                          | 
+| Default web browser   | [Chrome UK](https://www.google.com/intl/en_uk/chrome/)                   |
+| Developer web browser | [Firefox developer UK](https://www.mozilla.org/en-GB/firefox/developer/) |
+| Main Color scheme     | [Dracula 🧛](https://github.com/dracula/dracula-theme)                   |
+| Second Color scheme   | [Catppuccin 🐱](https://github.com/catppuccin/catppuccin)                |
+| Snippets App          | [SnippetsLab 🧪](https://www.renfei.org/snippets-lab/)                   |
+
 
 ## 🖼️ Wallpapers
+
 ### Desktop
 <p>
     <a href="https://github.com/vianch/config-files/tree/main/wallpapers/desktop" target="_blank">
