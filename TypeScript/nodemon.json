@@ -1,9 +1,0 @@
-{
-  "watch": ["server", "server/types"],
-  "ext": ".ts",
-  "ignore": [".git", "node_modules/**/node_modules"],
-  "exec": "ts-node --files",
-  "execMap": {
-    "ts": "ts-node"
-  }
-}

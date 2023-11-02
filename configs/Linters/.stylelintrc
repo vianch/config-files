@@ -1,0 +1,27 @@
+{
+  "extends": "stylelint-config-recommended",
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-no-unknown":  null,
+    "scss/at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+    }],
+    "block-no-empty": null,
+    "comment-empty-line-before": [
+      "always",
+      {
+        "ignore": ["stylelint-commands", "after-comment"]
+      }
+    ],
+    "max-empty-lines": 2,
+    "color-hex-case": [
+      "lower",
+      {
+        "message": "Lowercase letters are easier to distinguish from numbers"
+      }
+    ],
+    "unit-allowed-list": ["em", "px", "rem", "%", "s"]
+  }
+}
