@@ -43,7 +43,7 @@
 | Second Color scheme   | [Catppuccin 🐱](https://github.com/catppuccin/catppuccin)                |
 | Snippets App          | [SnippetsLab 🧪](https://www.renfei.org/snippets-lab/)                   |
 
-## Wallpapers
+## 🖼️ Wallpapers
 
 ### Desktop
 <p>
