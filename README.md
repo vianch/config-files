@@ -23,7 +23,7 @@
 | [TypeScript](https://github.com/vianch/config-files/tree/main/configs/TypeScript)                                              |
 
 ## 🎨 Documentation
-- [Config-files wiki](https://github.com/vianch/config-files/wiki)
+* [Config-files wiki](https://github.com/vianch/config-files/wiki)
 * [PR / Commits Contribute](https://github.com/vianch/config-files/wiki/Contributing)
 * [Typewriter Guidelines](https://github.com/vianch/config-files/wiki/TypeScript-guidelines)
 * [Docker commands](https://github.com/vianch/config-files/wiki/Docker-commands)
