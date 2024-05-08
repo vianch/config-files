@@ -36,12 +36,15 @@
 | Terminal              | [iterm2](https://iterm2.com/)                                            |
 | Terminal framework    | [Oh My Zsh](https://ohmyz.sh/)                                           |
 | Terminal Searcher     | [fzf](https://github.com/junegunn/fzf)                                   |
+| Terminal multiplexer  | [tmux](https://github.com/tmux/tmux)                                     |
+| Syntax highlightin    | [Bat](https://github.com/sharkdp/bat)                                    |
 | IDE                   | [Webstorm](https://www.jetbrains.com/webstorm/)                          | 
 | Default web browser   | [Chrome UK](https://www.google.com/intl/en_uk/chrome/)                   |
 | Developer web browser | [Firefox developer UK](https://www.mozilla.org/en-GB/firefox/developer/) |
 | Main Color scheme     | [Dracula 🧛](https://github.com/dracula/dracula-theme)                   |
 | Second Color scheme   | [Catppuccin 🐱](https://github.com/catppuccin/catppuccin)                |
 | Snippets App          | [SnippetsLab 🧪](https://www.renfei.org/snippets-lab/)                   |
+| Snippets Web          | [Snippets VIANCH 🧪](https://snippets.vianch.com/snippets)               |
 
 ## 🖼️ Wallpapers
 
