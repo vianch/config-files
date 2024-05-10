@@ -1,9 +1,16 @@
 # Config files Repository
 ## 👇 Index
-- [🎨 Config files](#-config-files)
-- [📖 Documentation](#-documentation)
-- [💻 Apps used](#-apps-used)
-- [🖼️ Wallpapers](#-wallpapers)
+- [Config files Repository](#config-files-repository)
+  - [👇 Index](#-index)
+  - [🎨 Config files](#-config-files)
+  - [🎨 Documentation](#-documentation)
+  - [💻 Apps used](#-apps-used)
+  - [My Keyboards](#my-keyboards)
+    - [Switches](#switches)
+    - [40% keyboard layers](#40-keyboard-layers)
+  - [🖼️ Wallpapers](#️-wallpapers)
+    - [Desktop](#desktop)
+    - [Mobile](#mobile)
 
 ## 🎨 Config files
 | Config Name                                                                                                                    |
@@ -18,7 +25,7 @@
 | [Kubernetes](https://github.com/vianch/config-files/tree/main/configs/Kubernetes) |
 | [Linters](https://github.com/vianch/config-files/tree/main/configs/Linters)                                                    |
 | [NGINX](https://github.com/vianch/config-files/tree/main/configs/NGINX)                                                        |
-| [iterm2 Configs](https://github.com/vianch/config-files/tree/main/configs/terminal)                                            |
+| [Terminal Configs](https://github.com/vianch/config-files/tree/main/configs/terminal)                                            |
 | [NextJS](https://github.com/vianch/config-files/tree/main/configs/NextJs)                                                      |
 | [TypeScript](https://github.com/vianch/config-files/tree/main/configs/TypeScript)                                              |
 
@@ -46,6 +53,21 @@
 | Snippets App          | [SnippetsLab 🧪](https://www.renfei.org/snippets-lab/)                   |
 | Snippets Web          | [Snippets VIANCH 🧪](https://snippets.vianch.com/snippets)               |
 
+## My Keyboards
+<p>
+    <img width="720"  src="/assets/images/IMG_0326.JPG" alt="keyboards" />
+</p>
+
+### Switches
+
+| <img width="320"  src="/assets/images/gopolar.webp" alt="gopolar" /> | <img width="320"  src="/assets/images/eva.png" alt="eva-01" />|
+ |--------------|--------------|
+
+### 40% keyboard layers
+
+| <img width="420"  src="/assets/images/layer0.png" alt="layer0" /> | <img width="420"  src="/assets/images/layer1.png" alt="layer1" />|
+ |--------------|--------------|
+
 ## 🖼️ Wallpapers
 
 ### Desktop
@@ -58,6 +80,6 @@
 ### Mobile
 <p>
     <a href="https://github.com/vianch/config-files/tree/main/wallpapers/mobile" target="_blank">
-        <img src="https://raw.githubusercontent.com/vianch/config-files/main/wallpapers/mobile/wp6759641-reptar-wallpapers.jpg" />
+        <img height="1240" src="/wallpapers/mobile/IMG_0335.JPG" />
     </a>
 </p>
