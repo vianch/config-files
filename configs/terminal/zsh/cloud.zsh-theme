@@ -1,3 +1,4 @@
+# override the following configuration inside $ZSH/theme/cloud.zsh-theme
 if [[ -z $ZSH_THEME_CLOUD_PREFIX ]]; then
     ZSH_THEME_CLOUD_PREFIX='🧛'
 fi
