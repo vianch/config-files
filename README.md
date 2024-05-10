@@ -59,6 +59,8 @@
 </p>
 
 ### Switches
+- GoPolar x Gateron Azure Dragon V3 Switches
+- EV-01 Linear Switches
 
 | <img width="320"  src="/assets/images/gopolar.webp" alt="gopolar" /> | <img width="320"  src="/assets/images/eva.png" alt="eva-01" />|
  |--------------|--------------|
