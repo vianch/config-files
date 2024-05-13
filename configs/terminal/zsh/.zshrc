@@ -8,7 +8,7 @@ export CONTENTFUL_HOST="https://cdn.contentful.com"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:$PATH
 
-ZSH_THEME="cloud"
+ZSH_THEME="dracula"
 
 CASE_SENSITIVE="false"
 
@@ -27,7 +27,11 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# User configuration
+# set up fzf keybinding ad fuzzy completion
 eval "$(fzf --zsh)"
+# startshio coss-shell prompt
+eval "$(starship init zsh)"
 
 alias zshconfig="mate ~/.zshrc"
 alias ghcz="git cz"
