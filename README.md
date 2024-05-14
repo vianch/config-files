@@ -1,4 +1,8 @@
 # Config files Repository
+<p align="center">
+  <img src="/assets/images/terminal.jpg" height="480" />
+</p>
+
 ## 👇 Index
 - [Config files Repository](#config-files-repository)
   - [👇 Index](#-index)
@@ -13,6 +17,7 @@
     - [Mobile](#mobile)
 
 ## 🎨 Config files
+
 | Config Name                                                                                                                    |
 |--------------------------------------------------------------------------------------------------------------------------------|
 | [Bash](https://github.com/vianch/config-files/tree/main/configs/Bash)                                                          |
