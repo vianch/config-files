@@ -34,7 +34,7 @@ eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
 
 alias zshconfig="mate ~/.zshrc"
-alias ghcz="git cz"
+alias gcz="git cz"
 alias grails="/Users/user/.sdkman/candidates/grails/current/bin/grails"
 alias python=/usr/bin/python3
 # alias ohmyzsh="mate ~/.oh-my-zsh"
