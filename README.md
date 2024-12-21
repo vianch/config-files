@@ -22,6 +22,7 @@
 |--------------------------------------------------------------------------------------------------------------------------------|
 | [Bash](https://github.com/vianch/config-files/tree/main/configs/Bash)                                                          |
 | [CircleCi](https://github.com/vianch/config-files/tree/main/configs/.circleci)                                                 |
+| [Cursor](https://github.com/vianch/config-files/tree/main/configs/cursor)                                                 |
 | [Docker](https://github.com/vianch/config-files/tree/main/configs/Docker)                                                      |
 | [Gatsby](https://github.com/vianch/config-files/tree/main/configs/Gatsby)                                                      |
 | [GitHub](https://github.com/vianch/config-files/tree/main/configs/Github)                                                      |
