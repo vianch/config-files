@@ -33,6 +33,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+storybook-static/
 
 # TypeScript v1 declaration files
 #typings/
@@ -60,6 +61,9 @@ jspm_packages/
 
 # next.js build output
 .next
+
+#Jest
+reports
 
 #production
 www/
