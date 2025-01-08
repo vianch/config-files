@@ -31,7 +31,7 @@
 | [Kubernetes](https://github.com/vianch/config-files/tree/main/configs/Kubernetes) |
 | [Linters](https://github.com/vianch/config-files/tree/main/configs/Linters)                                                    |
 | [NGINX](https://github.com/vianch/config-files/tree/main/configs/NGINX)                                                        |
-| [Terminal Configs](https://github.com/vianch/config-files/tree/main/configs/terminal)                                            |
+| [Terminal/zsh Configs](https://github.com/vianch/config-files/tree/main/configs/terminal)                                            |
 | [NextJS](https://github.com/vianch/config-files/tree/main/configs/NextJs)                                                      |
 | [TypeScript](https://github.com/vianch/config-files/tree/main/configs/TypeScript)                                              |
 
