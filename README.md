@@ -31,6 +31,7 @@
 | [Kubernetes](https://github.com/vianch/config-files/tree/main/configs/Kubernetes) |
 | [Linters](https://github.com/vianch/config-files/tree/main/configs/Linters)                                                    |
 | [NGINX](https://github.com/vianch/config-files/tree/main/configs/NGINX)                                                        |
+| [OpenCode](https://github.com/vianch/config-files/tree/main/configs/.opencode)                                                 |
 | [Terminal/zsh Configs](https://github.com/vianch/config-files/tree/main/configs/terminal)                                            |
 | [NextJS](https://github.com/vianch/config-files/tree/main/configs/NextJs)                                                      |
 | [TypeScript](https://github.com/vianch/config-files/tree/main/configs/TypeScript)                                              |
@@ -58,6 +59,9 @@
 | Second Color scheme   | [Catppuccin 🐱](https://github.com/catppuccin/catppuccin)                |
 | Snippets App          | [SnippetsLab 🧪](https://www.renfei.org/snippets-lab/)                   |
 | Snippets Web          | [Snippets VIANCH 🧪](https://snippets.vianch.com/snippets)               |
+| Opencode              | [Opencode](https://opencode.google.com)                                  |
+| MCP Server            | [MCP Server](https://github.com/vianch/config-files/tree/main/configs/.opencode/mcp/
+server) |
 
 ## My Keyboards
 <p>

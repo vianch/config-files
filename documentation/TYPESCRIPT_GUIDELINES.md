@@ -39,10 +39,9 @@
 
 ## Basics
 - Avoid using `any`, `object` or `unknown` types.
-- In shared packages we can export types from the `components` folder that we want to import into other projects
+- we can export types from the `components` folder that we want to import into other projects
 ```typescript
-// TodayTix component file:
-import { CookieBannerLabels } from '@todaytix/shared/src/types';
+
 
 const Labels: CookieBannerLabels = {} as CookieBannerLabels;
 ```
