@@ -7,7 +7,7 @@ tools:
   create_pull_request: true
   pull_request_read: true
 mcp:
-  - mcp-server
+  - todaytix-server
 ---
 
 # Commit Command
@@ -24,6 +24,7 @@ When the user runs this command, execute the following workflow:
 2. **Run pre-commit validation**:
    - Execute `pnpm lint` and report any issues
    - Execute `pnpm build` and ensure it succeeds
+   - Execute the command /clean to ensure the code is clean with the correct formatting and sorting, if the code requieres cleaning use subagent coder-agent to fix issues  
    - If either fails, ask user if they want to proceed anyway or fix issues first
    
 3. **Analyze git status**:
