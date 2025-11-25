@@ -36,7 +36,7 @@
       "url": "https://api.githubcopilot.com/mcp/",
       "enabled": true,
       "headers": {
-        "Authorization": "Bearer your_github_copilot_token_here"
+        "Authorization": "Bearer ${GITHUB_COPILOT_API_KEY}"
       }
     },
     "next-devtools": {
