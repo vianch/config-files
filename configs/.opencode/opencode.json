@@ -21,7 +21,7 @@
       "type": "local",
       "command": ["npx", "-y", "@modelcontextprotocol/server-brave-search"],
       "environment": {
-        "BRAVE_API_KEY": "BSA_wZkHdwPXicA1IyEdaP5KXTRsxJ1"
+        "BRAVE_API_KEY": "BSA_your_brave_api_key_here"
       },
       "enabled": true
     },
@@ -36,7 +36,7 @@
       "url": "https://api.githubcopilot.com/mcp/",
       "enabled": true,
       "headers": {
-        "Authorization": "Bearer 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"
+        "Authorization": "Bearer ghp_your_github_copilot_token_here"
       }
     },
     "next-devtools": {
