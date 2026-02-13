@@ -7,24 +7,6 @@
     }
   },
   "mcp": {
-    "playwright": {
-      "type": "local",
-      "command": ["npx", "@playwright/mcp@latest"],
-      "enabled": true
-    },
-    "gh_grep": {
-      "type": "remote",
-      "url": "https://mcp.grep.app",
-      "enabled": true
-    },
-    "brave-search": {
-      "type": "local",
-      "command": ["npx", "-y", "@modelcontextprotocol/server-brave-search"],
-      "environment": {
-        "BRAVE_API_KEY": "BSA_your_brave_api_key_here"
-      },
-      "enabled": true
-    },
     "git": {
       "type": "local",
       "command": ["npx", "-y", "git-mcp-server"],
@@ -32,19 +14,36 @@
       "timeout": 5000
     },
     "github": {
-      "type": "remote",
-      "url": "https://api.githubcopilot.com/mcp/",
-      "enabled": true,
-      "headers": {
-        "Authorization": "Bearer ${GITHUB_COPILOT_API_KEY}"
-      }
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-github"],
+      "environment": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      },
+      "enabled": true
     },
-    "next-devtools": {
+    "brave-search": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-brave-search"],
+      "environment": {
+        "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+      },
+      "enabled": true
+    },
+    "nextjs-devtools": {
       "type": "local",
       "command": ["npx", "-y", "next-devtools-mcp@latest"],
-      "enabled": true,
-      "timeout": 5000
+      "enabled": true
+    },
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "@playwright/mcp@latest"],
+      "environment": {},
+      "enabled": true
+    },
+    "figma": {
+      "type": "remote",
+      "url": "http://127.0.0.1:3845/mcp",
+      "enabled": true
     }
-  },
-  "lsp": {}
+  }
 }
