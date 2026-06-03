@@ -105,3 +105,10 @@ frontend/website/server.cert
 *.cert
 *.key
 .idea/workspace.xml
+
+# Rust repo-manager (TUI repo cloner/updater)
+/target/
+/repos/
+
+# Large assets
+assets/guides/

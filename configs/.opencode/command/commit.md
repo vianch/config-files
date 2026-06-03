@@ -6,8 +6,7 @@ tools:
   create_branch: true
   create_pull_request: true
   pull_request_read: true
-mcp:
-  - todaytix-server
+
 ---
 
 # Commit Command
