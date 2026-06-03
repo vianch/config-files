@@ -109,3 +109,6 @@ frontend/website/server.cert
 # Rust repo-manager (TUI repo cloner/updater)
 /target/
 /repos/
+
+# Large assets
+assets/guides/
