@@ -112,3 +112,11 @@ frontend/website/server.cert
 
 # Large assets
 assets/guides/
+
+# Claude Code — never vendor secrets, transcripts, or managed plugin installs
+configs/.claude/**/.credentials.json
+configs/.claude/**/projects/
+configs/.claude/**/history.jsonl
+configs/.claude/**/shell-snapshots/
+configs/.claude/**/node_modules/
+configs/.claude/user/plugins/

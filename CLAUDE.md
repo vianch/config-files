@@ -11,7 +11,7 @@ A personal **configuration-files collection** — dotfiles and settings for the 
 
 ## Configuration collection
 
-- `configs/` — per-tool configuration, one folder each: Bash, CircleCI (`.circleci`), Cursor, Docker, Gatsby, GitHub, Husky, Jest, Kubernetes, Linters, NGINX, OpenCode (`.opencode`), terminal/zsh, Next.js, TypeScript. Each is the canonical copy of that tool's dotfiles — edit the file under `configs/` and re-link/copy into the live location; don't hand-edit the live copy and forget this one.
+- `configs/` — per-tool configuration, one folder each: Bash, CircleCI (`.circleci`), Claude Code (`.claude` — `user`/`project` scopes), Cursor, Docker, Gatsby, GitHub, Husky, Jest, keyboard layouts, Kubernetes, Linters, n8n, Neovim (`nvim`), Next.js, NGINX, OpenCode (`.opencode`), terminal/zsh, TypeScript, Vite. Each is the canonical copy of that tool's dotfiles — edit the file under `configs/` and re-link/copy into the live location; don't hand-edit the live copy and forget this one.
 - `documentation/` — long-form guides (e.g. a Pokémon Red/Fire guide and other personal notes).
 - `wallpapers/`, `assets/` — images (desktop/mobile wallpapers, README screenshots). Binary; don't reformat.
 - `README.md` — the human-facing index of the collection (config links, hardware/keyboard notes, app list).
@@ -21,6 +21,8 @@ These are mostly drop-in files for other environments. Treat them as data: prese
 ## `.claude/` — Claude Code rules & skills
 
 `.claude/rules/` and `.claude/skills/` are the owner's reusable Claude Code configuration. **They target an external project — the "Snippets" app (Next.js 16 App Router, React 19, TypeScript, Supabase, Zustand 5, CodeMirror) — not the Rust code in this repo.** When working on `repo-manager`, follow Rust idioms and the *Conventions* section, not these. They live here so they travel between machines and projects.
+
+> **Canonical copies live under [`configs/.claude/`](configs/.claude/).** The root `.claude/` is the *live* project config Claude Code actually reads; `configs/.claude/project/` is its versioned canonical copy, and `configs/.claude/user/` mirrors the global `~/.claude` config (settings, hooks, agents, commands, statusline). Secrets (`.credentials.json`), conversation transcripts (`projects/`, `history.jsonl`), and managed plugin installs (`skills/`, `plugins/`) are **never** vendored — `.gitignore` guards against it. See [`configs/.claude/README.md`](configs/.claude/README.md). Keep `configs/.claude/project/` in sync when you edit the root `.claude/`.
 
 ### Rules — [`.claude/rules/`](.claude/rules/)
 

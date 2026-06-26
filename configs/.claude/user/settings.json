@@ -1,0 +1,145 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "attribution": {
+    "commit": ""
+  },
+  "permissions": {
+    "allow": [
+      "Bash(cd ~/.claude/skills/gstack*)",
+      "Bash(git fetch origin*)",
+      "Bash(git reset --hard origin/main*)",
+      "Bash(./setup*)"
+    ],
+    "defaultMode": "auto"
+  },
+  "model": "opus[1m]",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/victorchavarro/.claude/hooks/rtk-rewrite.sh"
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/log-activity.sh pre-tool-use"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/bootstrap-flows.sh session-start"
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/open-workflow-docs.sh session-start"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/open-workflow-docs.sh user-prompt"
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/log-activity.sh user-prompt"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/log-activity.sh post-tool-use"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/log-activity.sh subagent-start"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/log-activity.sh subagent-stop"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "/Users/victorchavarro/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true,
+    "ponytail@ponytail": true,
+    "caveman@caveman": true,
+    "agent-skills@addy-agent-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    },
+    "caveman": {
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman"
+      }
+    },
+    "addy-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "addyosmani/agent-skills"
+      }
+    }
+  },
+  "effortLevel": "xhigh",
+  "theme": "dark-ansi",
+  "preferredNotifChannel": "ghostty",
+  "teammateMode": "tmux",
+  "remoteControlAtStartup": true,
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true,
+  "useAutoModeDuringPlan": true
+}
