@@ -1,5 +1,17 @@
 # Agentic Coding Guidelines for this Repository
 
+## Project Architecture Context
+
+This repository is part of the ToDesktop workflow-visualizer project. Use this context for architecture and data-flow questions. The source flow definition is at `/Users/vianch/.claude/workflow-docs/projects/config-files-00899149/flows.json`; the live view is available at `http://127.0.0.1:47318/projects/config-files-00899149/index.html`.
+
+The system is organized into these lanes: `ACTORS` → `CLIENT SURFACES` → `AUTH + FIREBASE FUNCTIONS` → `STORAGE / DATA` → `BUILD PIPELINE` → `DISTRIBUTION` → `EXTERNAL SERVICES`.
+
+Key components include the ToDesktop end user, user Electron repository, Builder app, admin and invitee browsers, `@todesktop/cli`, Builder template, web-app frontend, website-combined, Firebase Auth, Firebase Functions for auth/builds/billing/infrastructure/api/analysis, Firestore, Firebase Storage, AWS S3, Cloudflare R2, Azure Pipelines, desktopify-runner, `@todesktop/desktopify`, CDN and API workers, Cloudflare API, Azure Key Vault, Apple notarization, Windows code-signing CA, Postmark, Stripe API, and the npm registry.
+
+Documented flows are: `todesktop build` (Electron CLI), `todesktop release` (publish as latest), installed app auto-update check, inviting a new organization user, and the Stripe billing webhook.
+
+When modifying workflow documentation or its generated visualization, invoke the workflow-doc-generator subagent.
+
 This repository is primarily for configuration files, but the following guidelines apply to any code or scripts developed within this context.
 
 ## 1. Build, Lint, and Test Commands
