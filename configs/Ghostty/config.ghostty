@@ -1,0 +1,67 @@
+# Shades of Purple — Ghostty Theme
+# Palette: https://github.com/ahmadawais/shades-of-purple-vscode
+
+background = #1E1E3F
+foreground = #A599E9
+
+cursor-color = #FAD000
+cursor-text = #1E1E3F
+
+selection-background = #4D21FC
+selection-foreground = #A599E9
+
+# ANSI colors
+# Normal
+palette = 0=#1E1E3F
+palette = 1=#FF628C
+palette = 2=#3AD900
+palette = 3=#FAD000
+palette = 4=#3AD900
+palette = 5=#B362FF
+palette = 6=#9EFFFF
+palette = 7=#A599E9
+
+# Bright
+palette = 8=#2e2b57
+palette = 9=#FF628C
+palette = 10=#A5FF90
+palette = 11=#A599E9
+palette = 12=#3AD900
+palette = 13=#FB94FF
+palette = 14=#9EFFFF
+palette = 15=#a5f0b3
+
+copy-on-select = clipboard
+focus-follows-mouse = true
+font-thicken = true
+# font-feature = -liga
+macos-non-native-fullscreen = true
+mouse-hide-while-typing = true
+
+# scrollback-limit in bytes, roughly 125,000 lines
+scrollback-limit = 10000000
+
+shell-integration = zsh
+shell-integration-features = no-cursor,ssh-terminfo,ssh-env
+# note: see zsh/.zshrc "ghostty integration"
+
+### Keybindings
+# super==cmd, alt==opt
+# move between tabs is cmd+alt+arrow
+keybind = super+alt+left=previous_tab
+keybind = super+alt+right=next_tab
+# move between panes is cmd+arrow
+keybind = super+left=goto_split:previous
+keybind = super+right=goto_split:next
+# cmd+s sends :w<enter> - so cmd-s works in vim in terminal
+keybind = super+s=text:\x1b:w\n
+
+### Misc settings
+desktop-notifications = false
+quit-after-last-window-closed = true
+window-new-tab-position = end
+window-save-state = never
+
+# window-colorspace = srgb
+window-colorspace = display-p3
+keybind = shift+enter=text:\n
