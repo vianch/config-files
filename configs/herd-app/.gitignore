@@ -1,0 +1,26 @@
+# Herdr generated or machine-specific files
+AGENTS.md
+herdr.d.ts
+gpui-kit.d.ts
+**/gpui-kit.d.ts
+installed.json
+frame/
+icons/
+layouts/.state/
+view.json
+shared.json
+shared.json.corrupt-*
+seen.json
+window.json
+windows.json
+data/
+telemetry/
+update-notes*
+herdr-app.sock
+.claude/
+prompts/
+*.error
+*.reset-*
+*.old-*
+__pycache__/
+*.py[cod]
