@@ -52,6 +52,7 @@ Each folder under [`configs/`](configs) is the **canonical copy** of that tool's
 | [Cursor](configs/cursor) | `.cursorrules_react` | Cursor IDE AI rules tuned for React / TypeScript projects. |
 | [OpenCode](configs/.opencode) | `opencode.json`, `agent/`, `command/`, `mcp/server/`, `themes/`, `context/` | OpenCode configuration: primary agents and subagents, slash commands, a Python MCP server, a custom theme, and shared project context. |
 | [Claude Code](configs/.claude) | `user/` (global `~/.claude`: settings, hooks, agents, commands, statusline), `project/` (rules, skills, agents, memory) | Canonical copy of my Claude Code setup — global config plus project-scoped rules/skills. Secrets, transcripts, and the 1.1 GB plugin install are deliberately excluded; see its [README](configs/.claude/README.md). |
+| [Herdr App](configs/herd-app) | layouts/retro.json, keys.json, settings.json, themes/, fonts/, custom mods | Custom retro layout, theme, fonts, shortcuts, and panels for the Herdr desktop app. See its README (configs/herd-app/README.md). |
 
 ### Shell & terminal
 

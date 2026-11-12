@@ -1,0 +1,591 @@
+{
+ "v": 1,
+ "at": 1794412800000,
+ "ms": 41,
+ "cold": false,
+ "session": {
+  "id": "00000000-demo-4000-8000-000000000000",
+  "pid": 0,
+  "cwd": "/home/dev/bakery-app",
+  "title": "Invoice export for the bakery app",
+  "version": "0.0.0",
+  "live": true,
+  "name": "demo",
+  "startedAt": 1794407100000
+ },
+ "owner": {
+  "prompt": "leave cancelled orders out, and show the tax line. Also round every line total to cents before summing, put the export button next to Print, and keep the PDF behind a flag until the layout is signed off.",
+  "at": 1794412400000,
+  "asks": 6,
+  "interrupted": true
+ },
+ "coordinator": {
+  "model": "claude-opus-5-5",
+  "modelLabel": "Opus 5.5",
+  "state": "waiting-you",
+  "label": "waiting on you: a question",
+  "since": 1794412100000,
+  "turnStartedAt": 1794412400000,
+  "tokens": {
+   "in": 160,
+   "out": 48785,
+   "cr": 6253380,
+   "cw": 133825
+  },
+  "usd": 3.69,
+  "usdPartial": false,
+  "tools": 58,
+  "codeWrites": [
+   "src/export/csv.py",
+   "src/export/pdf.py"
+  ],
+  "codeEdits": 3,
+  "activity": {
+   "kind": "tool",
+   "detail": "AskUserQuestion",
+   "at": 1794412100000
+  },
+  "statusMsg": null
+ },
+ "advisor": {
+  "model": "claude-fable-5-2",
+  "modelLabel": "Fable 5.2",
+  "available": true,
+  "consults": 4,
+  "usd": 6.12,
+  "last": {
+   "id": "consult-demo",
+   "at": 1794412550000,
+   "endedAt": 1794412680000,
+   "ms": 130000,
+   "model": "claude-fable-5-2",
+   "in": 132357,
+   "out": 11257,
+   "usd": 1.51,
+   "redacted": true,
+   "error": null,
+   "advice": null,
+   "by": "export-build@crew-demo"
+  }
+ },
+ "agents": [
+  {
+   "id": "agent-01",
+   "kind": "subagent",
+   "type": "analyst",
+   "name": null,
+   "nickname": "Spyglass",
+   "role": "scout",
+   "department": "Research",
+   "title": "Analyst",
+   "description": "Map where the invoice totals come from",
+   "model": "claude-sonnet-5-5",
+   "modelLabel": "Sonnet 5.5",
+   "status": "running",
+   "statusReason": null,
+   "startedAt": 1794411960000,
+   "endedAt": null,
+   "lastActivity": {
+    "kind": "tool",
+    "detail": "Grep rounding",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 120,
+    "out": 18200,
+    "cr": 1900000,
+    "cw": 64000
+   },
+   "usd": 0.84,
+   "usdPartial": false,
+   "toolUses": 31,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  },
+  {
+   "id": "agent-02",
+   "kind": "subagent",
+   "type": "explore",
+   "name": null,
+   "nickname": "Magnifico",
+   "role": "scout",
+   "department": "Research",
+   "title": "Analyst",
+   "description": "List every currency formatter",
+   "model": "claude-haiku-4-5",
+   "modelLabel": "Haiku 4.5",
+   "status": "completed",
+   "statusReason": null,
+   "startedAt": 1794410400000,
+   "endedAt": 1794410940000,
+   "lastActivity": {
+    "kind": "idle",
+    "detail": "",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 60,
+    "out": 4100,
+    "cr": 380000,
+    "cw": 12000
+   },
+   "usd": 0.12,
+   "usdPartial": false,
+   "toolUses": 12,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  },
+  {
+   "id": "export-design@crew-demo",
+   "kind": "teammate",
+   "type": "senior-implementer",
+   "name": "export-design",
+   "nickname": "Flux",
+   "role": "wizard",
+   "department": "Architecture",
+   "title": "Principal engineer",
+   "description": "Design the export pipeline",
+   "model": "claude-opus-5-5",
+   "modelLabel": "Opus 5.5",
+   "status": "idle",
+   "statusReason": null,
+   "startedAt": 1794407880000,
+   "endedAt": null,
+   "lastActivity": {
+    "kind": "idle",
+    "detail": "",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 256,
+    "out": 98126,
+    "cr": 9817233,
+    "cw": 141599
+   },
+   "usd": 6.45,
+   "usdPartial": false,
+   "toolUses": 88,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  },
+  {
+   "id": "export-build@crew-demo",
+   "kind": "teammate",
+   "type": "senior-implementer",
+   "name": "export-build",
+   "nickname": "Stardust",
+   "role": "wizard",
+   "department": "Architecture",
+   "title": "Principal engineer",
+   "description": "Build the CSV and PDF writers",
+   "model": "claude-opus-5-5",
+   "modelLabel": "Opus 5.5",
+   "status": "running",
+   "statusReason": null,
+   "startedAt": 1794411540000,
+   "endedAt": null,
+   "lastActivity": {
+    "kind": "thinking",
+    "detail": "thinking",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 90,
+    "out": 52000,
+    "cr": 8200000,
+    "cw": 140000
+   },
+   "usd": 4.1,
+   "usdPartial": false,
+   "toolUses": 64,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  },
+  {
+   "id": "agent-05",
+   "kind": "subagent",
+   "type": "implementer",
+   "name": null,
+   "nickname": "Bolt Cutter",
+   "role": "builder",
+   "department": "Engineering",
+   "title": "Engineer",
+   "description": "Fix rounding in line totals",
+   "model": "claude-sonnet-5-5",
+   "modelLabel": "Sonnet 5.5",
+   "status": "running",
+   "statusReason": null,
+   "startedAt": 1794411720000,
+   "endedAt": null,
+   "lastActivity": {
+    "kind": "writing",
+    "detail": "totals.py",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 70,
+    "out": 30100,
+    "cr": 4100000,
+    "cw": 90000
+   },
+   "usd": 1.92,
+   "usdPartial": false,
+   "toolUses": 48,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  },
+  {
+   "id": "agent-06",
+   "kind": "subagent",
+   "type": "implementer",
+   "name": null,
+   "nickname": "Turbo Turtle",
+   "role": "builder",
+   "department": "Engineering",
+   "title": "Engineer",
+   "description": "Add the export button",
+   "model": "claude-sonnet-5-5",
+   "modelLabel": "Sonnet 5.5",
+   "status": "pending",
+   "statusReason": null,
+   "startedAt": 1794412740000,
+   "endedAt": null,
+   "lastActivity": {
+    "kind": "idle",
+    "detail": "",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 0,
+    "out": 0,
+    "cr": 0,
+    "cw": 0
+   },
+   "usd": 0.0,
+   "usdPartial": false,
+   "toolUses": 0,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  },
+  {
+   "id": "agent-07",
+   "kind": "subagent",
+   "type": "implementer",
+   "name": null,
+   "nickname": "Jackhammer",
+   "role": "builder",
+   "department": "Engineering",
+   "title": "Engineer",
+   "description": "Migrate prices to cents",
+   "model": "claude-sonnet-5-5",
+   "modelLabel": "Sonnet 5.5",
+   "status": "completed",
+   "statusReason": null,
+   "startedAt": 1794408600000,
+   "endedAt": 1794409680000,
+   "lastActivity": {
+    "kind": "idle",
+    "detail": "",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 106,
+    "out": 49749,
+    "cr": 5595875,
+    "cw": 157244
+   },
+   "usd": 2.01,
+   "usdPartial": false,
+   "toolUses": 55,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  },
+  {
+   "id": "agent-08",
+   "kind": "subagent",
+   "type": "qa-verifier",
+   "name": null,
+   "nickname": "Nitpick",
+   "role": "critic",
+   "department": "QA & Review",
+   "title": "Reviewer",
+   "description": "Check the export in a browser",
+   "model": "claude-sonnet-5-5",
+   "modelLabel": "Sonnet 5.5",
+   "status": "failed",
+   "statusReason": "tool error: the browser timed out",
+   "startedAt": 1794410820000,
+   "endedAt": 1794411060000,
+   "lastActivity": {
+    "kind": "idle",
+    "detail": "",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 30,
+    "out": 5200,
+    "cr": 700000,
+    "cw": 20000
+   },
+   "usd": 0.41,
+   "usdPartial": false,
+   "toolUses": 14,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  },
+  {
+   "id": "agent-09",
+   "kind": "subagent",
+   "type": "pr-reviewer",
+   "name": null,
+   "nickname": "Red Pen",
+   "role": "critic",
+   "department": "QA & Review",
+   "title": "Reviewer",
+   "description": "Review the rounding fix",
+   "model": "claude-opus-5-5",
+   "modelLabel": "Opus 5.5",
+   "status": "waiting",
+   "statusReason": null,
+   "startedAt": 1794412260000,
+   "endedAt": null,
+   "lastActivity": {
+    "kind": "idle",
+    "detail": "waiting on a reply",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 40,
+    "out": 6100,
+    "cr": 620000,
+    "cw": 22000
+   },
+   "usd": 0.33,
+   "usdPartial": false,
+   "toolUses": 9,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  },
+  {
+   "id": "agent-10",
+   "kind": "subagent",
+   "type": "devops",
+   "name": null,
+   "nickname": "Gizmo",
+   "role": "helper",
+   "department": "Operations",
+   "title": "Generalist",
+   "description": "Rotate the staging logs",
+   "model": "claude-haiku-4-5",
+   "modelLabel": "Haiku 4.5",
+   "status": "killed",
+   "statusReason": null,
+   "startedAt": 1794411300000,
+   "endedAt": 1794411360000,
+   "lastActivity": {
+    "kind": "idle",
+    "detail": "",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 0,
+    "out": 0,
+    "cr": 0,
+    "cw": 0
+   },
+   "usd": 0.05,
+   "usdPartial": false,
+   "toolUses": 2,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  },
+  {
+   "id": "agent-11",
+   "kind": "subagent",
+   "type": "advisor",
+   "name": null,
+   "nickname": "Second Opinion",
+   "role": "advisor",
+   "department": "Advisor",
+   "title": "Board advisor",
+   "description": "Second look at the export plan",
+   "model": "claude-opus-5-5",
+   "modelLabel": "Opus 5.5",
+   "status": "running",
+   "statusReason": null,
+   "startedAt": 1794412620000,
+   "endedAt": null,
+   "lastActivity": {
+    "kind": "thinking",
+    "detail": "thinking",
+    "at": 1794412780000
+   },
+   "tokens": {
+    "in": 0,
+    "out": 0,
+    "cr": 0,
+    "cw": 0
+   },
+   "usd": 0.31,
+   "usdPartial": false,
+   "toolUses": 1,
+   "advisorConsults": 0,
+   "parentId": null,
+   "color": null
+  }
+ ],
+ "comms": [
+  {
+   "id": "c1",
+   "at": 1794409800000,
+   "from": "user",
+   "to": "coordinator",
+   "kind": "prompt",
+   "text": "add invoice export to the bakery app"
+  },
+  {
+   "id": "c2",
+   "at": 1794409850000,
+   "from": "coordinator",
+   "to": "agent-01",
+   "kind": "dispatch",
+   "text": "Map where the invoice totals come from"
+  },
+  {
+   "id": "c3",
+   "at": 1794409900000,
+   "from": "coordinator",
+   "to": "agent-05",
+   "kind": "dispatch",
+   "text": "Fix rounding in line totals"
+  },
+  {
+   "id": "c4",
+   "at": 1794410400000,
+   "from": "coordinator",
+   "to": "export-build@crew-demo",
+   "kind": "dispatch",
+   "text": "Build the CSV and PDF writers"
+  },
+  {
+   "id": "c5",
+   "at": 1794410900000,
+   "from": "agent-07",
+   "to": "coordinator",
+   "kind": "report",
+   "text": "Prices are stored in cents now; every test passes."
+  },
+  {
+   "id": "c6",
+   "at": 1794411100000,
+   "from": "advisor",
+   "to": "coordinator",
+   "kind": "advice",
+   "text": "advice redacted"
+  },
+  {
+   "id": "c7",
+   "at": 1794411300000,
+   "from": "coordinator",
+   "to": "agent-08",
+   "kind": "dispatch",
+   "text": "Check the export in a browser"
+  },
+  {
+   "id": "c8",
+   "at": 1794411400000,
+   "from": "agent-08",
+   "to": "coordinator",
+   "kind": "report",
+   "text": "Failed: the browser timed out twice."
+  },
+  {
+   "id": "c9",
+   "at": 1794411600000,
+   "from": "coordinator",
+   "to": "export-build@crew-demo",
+   "kind": "message",
+   "text": "Keep the PDF writer behind a flag for now."
+  },
+  {
+   "id": "c10",
+   "at": 1794411900000,
+   "from": "export-build@crew-demo",
+   "to": "coordinator",
+   "kind": "message",
+   "text": "Done: the PDF writer is behind EXPORT_PDF."
+  },
+  {
+   "id": "c11",
+   "at": 1794412100000,
+   "from": "coordinator",
+   "to": "user",
+   "kind": "question",
+   "text": "Should exports include cancelled orders?"
+  },
+  {
+   "id": "c12",
+   "at": 1794412400000,
+   "from": "user",
+   "to": "coordinator",
+   "kind": "prompt",
+   "text": "leave cancelled orders out, and show the tax line"
+  },
+  {
+   "id": "c13",
+   "at": 1794412420000,
+   "from": "coordinator",
+   "to": "agent-09",
+   "kind": "dispatch",
+   "text": "Review the rounding fix"
+  },
+  {
+   "id": "c14",
+   "at": 1794412680000,
+   "from": "advisor",
+   "to": "export-build@crew-demo",
+   "kind": "advice",
+   "text": "advice redacted"
+  },
+  {
+   "id": "c15",
+   "at": 1794412740000,
+   "from": "coordinator",
+   "to": "user",
+   "kind": "answer",
+   "text": "Cancelled orders are left out and the tax line shows under the subtotal."
+  }
+ ],
+ "skills": [
+  {
+   "skill": "plan-the-slice",
+   "at": 1794407400000,
+   "agentId": null
+  },
+  {
+   "skill": "tidy-comments",
+   "at": 1794411000000,
+   "agentId": "agent-05"
+  },
+  {
+   "skill": "ship-check",
+   "at": 1794412080000,
+   "agentId": null
+  }
+ ],
+ "totals": {
+  "usdEstimate": 26.03,
+  "usdEngine": null,
+  "usdEngineTeam": null
+ }
+}
